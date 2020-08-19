@@ -99,9 +99,16 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 		</ItemGroup>
 	</Target>
 ```
-运行项目，浏览器输入地址  http://localhost:8080
+`.csproj`文件这边的代码在运行项目时不用单独去启用一个`cmd`来运行前端，方便直接运行项目。浏览器输入地址  http://localhost:8080
 
 ![项目成功图](./img/2.png)
 
 这样一个基础的 .Net Core前后端分离项目就建好了
 
+## 二、项目扩展
+1. 通过`axios`进行前后端数据交互
+- `cmd` 进入 `clientapp` 目录下，安装 `axios`
+运行命令 `vue add axios` 或 `npm install axios -save`
+![安装axios](./img/4.png)
+
+在`src`目录下
